@@ -12,5 +12,6 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 # if __name__ == '__main__':
 #     print_hi('PyCharm')
-# django-admin startproject angInyongWebsite .
-# python manage.py startapp apply_ka_work
+# django-admin startproject angInyongWebsite . => terminal command to create an app folder
+# python manage.py startapp apply_ka_work => terminal command to create an app folder
+# python manage.py runserver => terminal command to run the django app
