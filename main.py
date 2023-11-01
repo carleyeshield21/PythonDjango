@@ -15,4 +15,5 @@ def print_hi(name):
 # django-admin startproject angInyongWebsite . => terminal command to create an app folder
 # python manage.py startapp apply_ka_work => terminal command to create an app folder
 # python manage.py runserver => terminal command to run the django app
-# python manage.py makemigrations =>terminal command for the database
+# python manage.py makemigrations =>terminal command for the database, the Forma class that we created in the models.py python file was translated
+# into a python code
