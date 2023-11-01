@@ -18,3 +18,4 @@ def print_hi(name):
 # python manage.py makemigrations =>terminal command for the database, the Forma class that we created in the models.py python file was translated
 # into a python code
 # the 0001_initial.py is the link between Forma class and the db.sqlite3
+# python manage.py makemigrations =>terminal command to execute the migration
