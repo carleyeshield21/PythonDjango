@@ -15,3 +15,4 @@ def print_hi(name):
 # django-admin startproject angInyongWebsite . => terminal command to create an app folder
 # python manage.py startapp apply_ka_work => terminal command to create an app folder
 # python manage.py runserver => terminal command to run the django app
+# python manage.py makemigrations =>terminal command for the database
