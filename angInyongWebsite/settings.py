@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apply_ka_work',
+    'apply_ka_work', #added this app
 ]
 
 MIDDLEWARE = [
