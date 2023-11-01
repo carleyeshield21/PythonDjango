@@ -16,6 +16,8 @@ def hindex(requester): #this function is used to retrieve the input that the use
             occupation = form.cleaned_data['occupation'] #argument should be the variable in the index.html name of the input
             print(firstname, lastname, email, occupation)
             print(type(firstname))
+        else:
+            print('Not Valid')
 
             Forma.objects.create(firstname=firstname, lastname=lastname, email=email, date=date, trabaho=occupation) #the variable argument
             # corresponds# to# the name of the# database# table,# its value corresponds# to the variable in the hindex function, this code should store the variables in the table
