@@ -8,5 +8,6 @@ def hindex(requester):
         firstname = form.cleaned_data['first_name'] #argument should be the variable in the index.html name of the input
         lastname = form.cleaned_data['lust_name'] #argument should be the variable in the index.html name of the input
         email = form.cleaned_data['email'] #argument should be the variable in the index.html name of the input
+        occupation = form.cleaned_data['occupation'] #argument should be the variable in the index.html name of the input
     return render(requester,'index.html')
     # return render(requester,'hindex.html')
