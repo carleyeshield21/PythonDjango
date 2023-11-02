@@ -9,17 +9,18 @@ def hindex(requester): #this function is used to retrieve the input that the use
     if requester.method == 'POST':
         form = AplikasyonForm(requester.POST)
         if form.is_valid(): #validate the form first
-            firstname = form.cleaned_data['first_name'] #argument should be the variable in the index.html name of the input
-            lastname = form.cleaned_data['lust_name'] #argument should be the variable in the index.html name of the input
+            first_name = form.cleaned_data['first_name'] #argument should be the variable in the index.html name of the input
+            lust_name = form.cleaned_data['lust_name'] #argument should be the variable in the index.html name of the input
             email = form.cleaned_data['email'] #argument should be the variable in the index.html name of the input
             date = form.cleaned_data['date'] #argument should be the variable in the index.html name of the input
             occupation = form.cleaned_data['occupation'] #argument should be the variable in the index.html name of the input
-            print(firstname, lastname, email, occupation)
-            print(type(firstname))
+            print(first_name, lust_name, email, occupation)
+            print(type(first_name))
         else:
             print('Not Valid')
+            print(form.errors)
 
-            Forma.objects.create(firstname=firstname, lastname=lastname, email=email, date=date, trabaho=occupation) #the variable argument
+            # Forma.objects.create(firstname=first_name, lastname=lastname, email=email, date=date, trabaho=occupation) #the variable argument
             # corresponds# to# the name of the# database# table,# its value corresponds# to the variable in the hindex function, this code should store the variables in the table
 
             messages.success(requester, 'Form submitted')
