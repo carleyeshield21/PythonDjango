@@ -7,5 +7,6 @@ class FormaAdmin(admin.ModelAdmin):
     search_fields = ('firstname', 'lastname','email','trabaho','date')
     list_filter = ('date','trabaho')
     ordering = ('-lastname',)
+    readonly_fields = ('lastname',)
 
 admin.site.register(Forma, FormaAdmin)
