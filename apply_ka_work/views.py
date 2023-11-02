@@ -26,3 +26,6 @@ def hindex(requester): #this function is used to retrieve the input that the use
             messages.success(requester, 'Form submitted')
     return render(requester,'index.html')
     # return render(requester,'hindex.html')
+
+def about(requester):
+    return render(requester, 'about.html')
