@@ -3,6 +3,9 @@ from .models import Forma
 
 # Register your models here.
 class FormaAdmin(admin.ModelAdmin):
+    list_display = ('firstname', 'lastname','email','trabaho','date')
+    search_fields = ('firstname', 'lastname','email','trabaho','date')
+    list_filter = ('date','trabaho')
+    ordering = ('-lastname',)
 
-
-admin.site.register(Forma)
+admin.site.register(Forma, FormaAdmin)
